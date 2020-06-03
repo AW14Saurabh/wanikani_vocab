@@ -1,6 +1,6 @@
 import json
 
-with open('./guru_1.json', encoding='utf-8') as f:
+with open('./output/guru_1.json', encoding='utf-8') as f:
     collection = json.load(f)
 
 assgn_data = collection['data']

@@ -9,5 +9,5 @@ token = os.environ['WK_TOKEN']
 headers = {'Authorization': f'Bearer {token}'}
 r = requests.get(url, headers=headers, params=payload)
 
-with open('./apprentice.json', 'w', encoding='utf-8') as f:
+with open('./output/apprentice.json', 'w', encoding='utf-8') as f:
     f.write(r.text)
